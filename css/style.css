@@ -42,7 +42,7 @@ input:checked ~ .desplegable{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--color_VerdeBase);
+    background-color: var(--color_VerdeOscuro);
     width: 100%;
     height: 100vh;
 }
@@ -54,6 +54,7 @@ ul{
 li{
     font-family: var(--fuente_Base);
     font-size: var(--fuente_BaseTamanyo);
+    color: var(--color_VerdeBase);
 }
 
 svg{
@@ -72,16 +73,14 @@ svg{
     background-color: var(--color_VerdeBase);
 }
 
-.iconoCasa{
-    height: 100px;
-    width: 100px;
-    margin: auto auto;
+.iconoRombo{
+   filter: invert();
 }
 
 h1{
     margin: 0;
     padding: 0;
-
+    color: var(--color_VerdeMuyClaro);
 }
 
 input:checked ~ .logoCasa{
