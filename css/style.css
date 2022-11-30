@@ -10,6 +10,7 @@
     --color_VerdeOscuro: #01402E;
     --color_VerdeClaro: #B3F2E0;
     --color_VerdeMuyClaro: #D0F2E9;
+    --color_grisFondo: #a7a7a7;
     
     /* MÁRGENES */
     --margen_PaddingGeneral: 30px;
@@ -66,6 +67,7 @@ svg{
 
 .logoCasa{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -73,17 +75,58 @@ svg{
     background-color: var(--color_VerdeBase);
 }
 
-.iconoRombo{
-   filter: invert();
+.iconoHex{
+    width: 40px;
+    height: 40px;
 }
 
-h1{
+h1, h2, h3{
     margin: 0;
     padding: 0;
-    color: var(--color_VerdeMuyClaro);
+    
+}
+h3{
+    color: var(--color_VerdeBase);
+}
+
+h2{
+    color: var(--color_grisFondo);
 }
 
 input:checked ~ .logoCasa{
     display: none;
+
+}
+
+.container{
+    padding: var(--margen_PaddingGeneral);
+}
+
+.titulos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 35vh;
+}
+
+.logoMarket{
+    display: flex;
+}
+
+.formularioLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 
 }
