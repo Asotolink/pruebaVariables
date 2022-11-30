@@ -16,6 +16,7 @@
     --margen_PaddingGeneral: 30px;
     --margen_PaddingBotones: 8px 10px;
     --margen_SeparacionSections: 80px;
+    --altura_Inputs: 48px;
     
     /* FUENTES */
     --fuente_Base:  Arial;
@@ -34,11 +35,11 @@
 
 
 
-input, .desplegable{
+.inputDesple, .desplegable{
     display: none;
 }
 
-input:checked ~ .desplegable{
+.inputDesple:checked ~ .desplegable{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -85,15 +86,20 @@ h1, h2, h3{
     padding: 0;
     
 }
+h1{
+    font-size: var(--fuente_H1);
+}
 h3{
+    font-size: var(--fuente_H3);
     color: var(--color_VerdeBase);
 }
 
 h2{
+    font-size: var(--fuente_H2);
     color: var(--color_grisFondo);
 }
 
-input:checked ~ .logoCasa{
+.inputDesple:checked ~ .logoCasa{
     display: none;
 
 }
@@ -108,7 +114,7 @@ input:checked ~ .logoCasa{
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    height: 35vh;
+    height: 30vh;
 }
 
 .logoMarket{
@@ -119,7 +125,10 @@ input:checked ~ .logoCasa{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    text-align: center;
+    height: 50vh;
 }
+
 
 
 footer{
@@ -130,3 +139,47 @@ footer{
     text-align: center;
 
 }
+
+
+
+.loginInput, .singInput{
+    width: 100%;
+    height: var(--altura_Inputs);
+    border-radius: 150px;
+    text-align: center;
+    border: none;
+}
+
+.loginInput{
+    background-color: var(--color_VerdeBase);
+
+}
+
+
+.loginInput::placeholder{
+    color: var(--color_VerdeMuyClaro);
+    font-weight: bold;
+}
+
+.singInput{
+    margin-top: 20px;
+    background-color: var(--color_VerdeClaro);
+}
+
+.singInput::placeholder{
+    color: black;
+    font-weight: bold;
+}
+
+.discover{
+    font-size: var(--fuente_H2);
+    color: var(--color_VerdeBase);
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+h5{
+    color: var(--color_grisFondo);
+}
+
